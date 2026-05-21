@@ -26,7 +26,7 @@ const stats = [
   { icon: FolderGit2, label: "Total Projects", value: "5+", color: "from-neon-blue/30 to-neon-blue/5" },
   { icon: Github, label: "GitHub Repos", value: "5+", color: "from-neon-purple/30 to-neon-purple/5" },
   { icon: Code2, label: "Technologies", value: "15+", color: "from-neon-blue/30 to-neon-purple/10" },
-  { icon: GitBranch, label: "Contributions", value: "5+", color: "from-neon-purple/30 to-neon-blue/10" },
+  { icon: GitBranch, label: "Contributions", value: "50+", color: "from-neon-purple/30 to-neon-blue/10" },
 ];
 
 export function Activity() {

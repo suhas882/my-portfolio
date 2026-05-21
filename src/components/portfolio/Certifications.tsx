@@ -8,6 +8,7 @@ const certs = [
   { name: "Crash Course on Python", issuer: "Google / Coursera" },
   { name: "Beginning C++ Programming", issuer: "Udemy" },
   { name: "Introduction to Machine Learning", issuer: "Coursera" },
+  { name: "Python", issuer: "MongoDB" },
 ];
 
 export function Certifications() {
