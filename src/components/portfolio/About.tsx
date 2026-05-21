@@ -3,7 +3,7 @@ import { Section } from "./Section";
 import { GraduationCap, Globe, HeartHandshake, Code2 } from "lucide-react";
 
 const stats = [
-  { label: "Projects Completed", value: "6+" },
+  { label: "Projects Completed", value: "5+" },
   { label: "Certifications", value: "5" },
   { label: "Technologies", value: "12+" },
   { label: "CGPA", value: "7.91" },
