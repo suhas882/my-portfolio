@@ -3,7 +3,6 @@
   "devCommand": "npm run dev",
   "outputDirectory": "dist/client",
   "framework": "vite",
-  "serverFunctions": "api/**",
   "rewrites": [
     {
       "source": "/:path*",
