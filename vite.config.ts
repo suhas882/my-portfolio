@@ -6,10 +6,10 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// For Vercel: Build as SPA with client-side routing
+// Build as pure client-side SPA for Vercel static hosting
 export default defineConfig({
   tanstackStart: {
-    // Keep server for local development
-    ssr: true,
+    // Disable server-side rendering for static deployment
+    ssr: false,
   },
 });
