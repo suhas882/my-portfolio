@@ -69,11 +69,14 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      console.log("Server fetch called for:", request.url);
       const handler = await getServerEntry();
+      console.log("Handler loaded");
       const response = await handler.fetch(request, env, ctx);
+      console.log("Response status:", response.status);
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
-      console.error(error);
+      console.error("Fatal server error:", error);
       return brandedErrorResponse();
     }
   },

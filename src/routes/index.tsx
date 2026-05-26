@@ -26,6 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  console.log("Index component rendering");
   return (
     <div className="relative min-h-screen">
       <Loader />
