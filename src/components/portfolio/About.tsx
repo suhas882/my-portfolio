@@ -6,7 +6,7 @@ const stats = [
   { label: "Projects Completed", value: "5+" },
   { label: "Certifications", value: "5" },
   { label: "Technologies", value: "12+" },
-  { label: "CGPA", value: "7.91" },
+  { label: "CGPA", value: "7.97" },
 ];
 
 export function About() {
@@ -73,7 +73,7 @@ export function About() {
               <div className="text-sm text-muted-foreground">
                 SRM Institute of Science and Technology
               </div>
-              <div className="mt-1 font-mono text-xs text-neon-blue">2023 – 2027 · CGPA 7.91</div>
+              <div className="mt-1 font-mono text-xs text-neon-blue">2023 – 2027 · CGPA 7.97</div>
             </div>
           </div>
 
