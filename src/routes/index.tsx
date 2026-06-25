@@ -12,7 +12,6 @@ import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 import { Loader } from "@/components/portfolio/Loader";
 import { CursorGlow } from "@/components/portfolio/CursorGlow";
-import { Chatbot } from "@/components/portfolio/Chatbot";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,7 +46,6 @@ function Index() {
         <Contact />
       </main>
       <Footer />
-      <Chatbot />
       <Toaster theme="dark" position="bottom-right" />
     </div>
   );
