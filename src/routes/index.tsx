@@ -17,7 +17,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Majeti Suhas — AI & Full Stack Developer" },
-      { name: "description", content: "Portfolio of Majeti Suhas — CSE (AI & ML) student building intelligent, scalable web experiences." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Majeti Suhas — CSE (AI & ML) student building intelligent, scalable web experiences.",
+      },
       { property: "og:title", content: "Majeti Suhas — AI & Full Stack Developer" },
       { property: "og:description", content: "Building intelligent and scalable web experiences." },
     ],

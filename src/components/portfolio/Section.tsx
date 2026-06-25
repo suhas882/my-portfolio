@@ -2,8 +2,18 @@ import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
 export function Section({
-  id, eyebrow, title, subtitle, children,
-}: { id: string; eyebrow: string; title: ReactNode; subtitle?: string; children: ReactNode }) {
+  id,
+  eyebrow,
+  title,
+  subtitle,
+  children,
+}: {
+  id: string;
+  eyebrow: string;
+  title: ReactNode;
+  subtitle?: string;
+  children: ReactNode;
+}) {
   return (
     <section id={id} className="relative px-4 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl">
@@ -20,9 +30,7 @@ export function Section({
           <h2 className="text-4xl font-bold sm:text-5xl">
             <span className="text-gradient">{title}</span>
           </h2>
-          {subtitle && (
-            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">{subtitle}</p>
-          )}
+          {subtitle && <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">{subtitle}</p>}
         </motion.div>
         {children}
       </div>

@@ -76,7 +76,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Portfolio of Majeti Suhas — AI & Full Stack Developer" },
       { name: "author", content: "Majeti Suhas" },
       { property: "og:title", content: "Majeti Suhas — Portfolio" },
-      { property: "og:description", content: "Portfolio of Majeti Suhas — AI & Full Stack Developer" },
+      {
+        property: "og:description",
+        content: "Portfolio of Majeti Suhas — AI & Full Stack Developer",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@suhas882" },

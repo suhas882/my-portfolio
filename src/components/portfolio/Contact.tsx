@@ -66,22 +66,34 @@ export function Contact() {
           </p>
 
           <div className="mt-6 space-y-3">
-            <a href="mailto:majetisuhas2021@gmail.com" className="glass flex items-center gap-3 rounded-xl p-4 transition-colors hover:text-neon-blue">
+            <a
+              href="mailto:majetisuhas2021@gmail.com"
+              className="glass flex items-center gap-3 rounded-xl p-4 transition-colors hover:text-neon-blue"
+            >
               <Mail className="h-5 w-5" />
               <div>
                 <div className="text-xs text-muted-foreground">Email</div>
                 <div className="text-sm font-medium">majetisuhas2021@gmail.com</div>
               </div>
             </a>
-            <a href="https://github.com/suhas882" target="_blank" rel="noreferrer"
-               className="glass flex items-center gap-3 rounded-xl p-4 transition-colors hover:text-neon-blue">
+            <a
+              href="https://github.com/suhas882"
+              target="_blank"
+              rel="noreferrer"
+              className="glass flex items-center gap-3 rounded-xl p-4 transition-colors hover:text-neon-blue"
+            >
               <Github className="h-5 w-5" />
               <div>
                 <div className="text-xs text-muted-foreground">GitHub</div>
                 <div className="text-sm font-medium">github.com/suhas882</div>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/majeti-suhas" target="_blank" rel="noreferrer" className="glass flex items-center gap-3 rounded-xl p-4 transition-colors hover:text-neon-purple">
+            <a
+              href="https://www.linkedin.com/in/majeti-suhas"
+              target="_blank"
+              rel="noreferrer"
+              className="glass flex items-center gap-3 rounded-xl p-4 transition-colors hover:text-neon-purple"
+            >
               <Linkedin className="h-5 w-5" />
               <div>
                 <div className="text-xs text-muted-foreground">LinkedIn</div>
@@ -108,21 +120,50 @@ export function Contact() {
         >
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
-              <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">Name</label>
-              <input required name="name" className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60" placeholder="Your name" />
+              <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">
+                Name
+              </label>
+              <input
+                required
+                name="name"
+                className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60"
+                placeholder="Your name"
+              />
             </div>
             <div>
-              <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">Email</label>
-              <input required type="email" name="email" className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60" placeholder="you@example.com" />
+              <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">
+                Email
+              </label>
+              <input
+                required
+                type="email"
+                name="email"
+                className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60"
+                placeholder="you@example.com"
+              />
             </div>
           </div>
           <div className="mt-4">
-            <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">Subject</label>
-            <input name="subject" className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60" placeholder="What's this about?" />
+            <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">
+              Subject
+            </label>
+            <input
+              name="subject"
+              className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60"
+              placeholder="What's this about?"
+            />
           </div>
           <div className="mt-4">
-            <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">Message</label>
-            <textarea required name="message" rows={5} className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60" placeholder="Tell me about your project or idea..." />
+            <label className="mb-2 block text-xs font-mono uppercase tracking-wider text-muted-foreground">
+              Message
+            </label>
+            <textarea
+              required
+              name="message"
+              rows={5}
+              className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none transition-colors focus:border-neon-blue/60"
+              placeholder="Tell me about your project or idea..."
+            />
           </div>
           <button
             type="submit"

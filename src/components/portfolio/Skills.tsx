@@ -7,7 +7,11 @@ const groups = [
   { icon: Globe, title: "Web", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"] },
   { icon: Database, title: "Database", items: ["MySQL"] },
   { icon: Wrench, title: "Tools", items: ["Git", "GitHub", "VS Code", "XAMPP"] },
-  { icon: Brain, title: "Domains", items: ["Artificial Intelligence", "Machine Learning", "Full Stack", "Deep Learning"] },
+  {
+    icon: Brain,
+    title: "Domains",
+    items: ["Artificial Intelligence", "Machine Learning", "Full Stack", "Deep Learning"],
+  },
 ];
 
 export function Skills() {

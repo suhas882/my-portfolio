@@ -19,7 +19,6 @@ const projects: Project[] = [
       "Full-stack e-commerce platform with shopping cart, checkout, and modern UI. Built for speed and reliability.",
     tags: ["React", "Tailwind", "JavaScript", "MySQL", "HTML/CSS"],
     github: "https://github.com/suhas882/AUTOMOBILE-SPARE-PART-SYSTEM",
-    
   },
   {
     icon: Bot,
@@ -30,20 +29,13 @@ const projects: Project[] = [
     github: "https://github.com/suhas882/HEALTHBUDDY",
   },
   {
-  icon: Activity,
-  title: "Pneumonia Detection Using CNN",
-  description:
-    "AI-powered pneumonia detection system using Convolutional Neural Networks (CNN) to analyze chest X-ray images for early disease diagnosis and improved prediction accuracy.",
-  tags: [
-    "Python",
-    "TensorFlow",
-    "Keras",
-    "OpenCV",
-    "CNN",
-    "Deep Learning"
-  ],
-  github: "https://github.com/suhas882",
-}
+    icon: Activity,
+    title: "Pneumonia Detection Using CNN",
+    description:
+      "AI-powered pneumonia detection system using Convolutional Neural Networks (CNN) to analyze chest X-ray images for early disease diagnosis and improved prediction accuracy.",
+    tags: ["Python", "TensorFlow", "Keras", "OpenCV", "CNN", "Deep Learning"],
+    github: "https://github.com/suhas882",
+  },
 ];
 
 export function Projects() {
@@ -74,7 +66,9 @@ export function Projects() {
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-primary shadow-glow">
                   <p.icon className="h-5 w-5 text-background" />
                 </div>
-                <span className="font-mono text-xs text-muted-foreground">0{i + 1} / 0{projects.length}</span>
+                <span className="font-mono text-xs text-muted-foreground">
+                  0{i + 1} / 0{projects.length}
+                </span>
               </div>
 
               <h3 className="font-display text-2xl font-semibold leading-tight">{p.title}</h3>

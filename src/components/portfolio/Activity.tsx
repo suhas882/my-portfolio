@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Section } from "./Section";
-import { Github, GitBranch, Code2, Activity as ActivityIcon, FolderGit2, ExternalLink } from "lucide-react";
+import {
+  Github,
+  GitBranch,
+  Code2,
+  Activity as ActivityIcon,
+  FolderGit2,
+  ExternalLink,
+} from "lucide-react";
 
 // Pseudo GitHub contribution grid — 7 rows x 24 cols
 const COLS = 24;
@@ -23,10 +30,30 @@ const levels = [
 ];
 
 const stats = [
-  { icon: FolderGit2, label: "Total Projects", value: "5+", color: "from-neon-blue/30 to-neon-blue/5" },
-  { icon: Github, label: "GitHub Repos", value: "5+", color: "from-neon-purple/30 to-neon-purple/5" },
-  { icon: Code2, label: "Technologies", value: "15+", color: "from-neon-blue/30 to-neon-purple/10" },
-  { icon: GitBranch, label: "Contributions", value: "50+", color: "from-neon-purple/30 to-neon-blue/10" },
+  {
+    icon: FolderGit2,
+    label: "Total Projects",
+    value: "5+",
+    color: "from-neon-blue/30 to-neon-blue/5",
+  },
+  {
+    icon: Github,
+    label: "GitHub Repos",
+    value: "5+",
+    color: "from-neon-purple/30 to-neon-purple/5",
+  },
+  {
+    icon: Code2,
+    label: "Technologies",
+    value: "15+",
+    color: "from-neon-blue/30 to-neon-purple/10",
+  },
+  {
+    icon: GitBranch,
+    label: "Contributions",
+    value: "50+",
+    color: "from-neon-purple/30 to-neon-blue/10",
+  },
 ];
 
 export function Activity() {
@@ -50,13 +77,17 @@ export function Activity() {
             whileHover={{ y: -4, scale: 1.02 }}
             className="glass-strong glow-border group relative overflow-hidden rounded-2xl p-5 transition-shadow hover:shadow-glow"
           >
-            <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${s.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
+            <div
+              className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${s.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
+            />
             <div className="relative">
               <div className="mb-3 grid h-10 w-10 place-items-center rounded-xl bg-gradient-primary shadow-glow">
                 <s.icon className="h-4 w-4 text-background" />
               </div>
               <div className="font-display text-3xl font-bold text-gradient-neon">{s.value}</div>
-              <div className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">{s.label}</div>
+              <div className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">
+                {s.label}
+              </div>
             </div>
           </motion.div>
         ))}
@@ -72,7 +103,10 @@ export function Activity() {
         {/* animated gradient backdrop */}
         <div className="pointer-events-none absolute -inset-px opacity-40">
           <div className="absolute -top-20 left-10 h-60 w-60 rounded-full bg-neon-blue/20 blur-3xl animate-blob" />
-          <div className="absolute -bottom-20 right-10 h-60 w-60 rounded-full bg-neon-purple/20 blur-3xl animate-blob" style={{ animationDelay: "4s" }} />
+          <div
+            className="absolute -bottom-20 right-10 h-60 w-60 rounded-full bg-neon-purple/20 blur-3xl animate-blob"
+            style={{ animationDelay: "4s" }}
+          />
         </div>
 
         <div className="relative">
@@ -115,7 +149,7 @@ export function Activity() {
                     initial={{ opacity: 0, scale: 0.6 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: (col * 0.015) + (row * 0.01) }}
+                    transition={{ duration: 0.3, delay: col * 0.015 + row * 0.01 }}
                     whileHover={{ scale: 1.4 }}
                     className={`aspect-square rounded-sm ${levels[level]} cursor-pointer`}
                   />

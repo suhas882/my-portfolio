@@ -6,17 +6,31 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <div className="flex items-center gap-2 text-sm">
           <span className="text-muted-foreground">
-            © {new Date().getFullYear()} <span className="text-foreground">Majeti Suhas</span>. All rights reserved.
+            © {new Date().getFullYear()} <span className="text-foreground">Majeti Suhas</span>. All
+            rights reserved.
           </span>
         </div>
         <div className="flex items-center gap-3 text-muted-foreground">
-          <a href="https://github.com/suhas882" target="_blank" rel="noreferrer" className="transition-colors hover:text-neon-blue">
+          <a
+            href="https://github.com/suhas882"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-neon-blue"
+          >
             <Github className="h-4 w-4" />
           </a>
-          <a href="https://www.linkedin.com/in/majeti-suhas" target="_blank" rel="noreferrer" className="transition-colors hover:text-neon-purple">
+          <a
+            href="https://www.linkedin.com/in/majeti-suhas"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-neon-purple"
+          >
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href="mailto:majetisuhas2021@gmail.com" className="transition-colors hover:text-neon-blue">
+          <a
+            href="mailto:majetisuhas2021@gmail.com"
+            className="transition-colors hover:text-neon-blue"
+          >
             <Mail className="h-4 w-4" />
           </a>
         </div>

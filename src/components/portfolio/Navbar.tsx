@@ -32,9 +32,11 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-6xl px-4">
-        <div className={`flex items-center justify-between rounded-2xl px-5 py-3 transition-all ${
-          scrolled ? "glass-strong shadow-card" : "glass"
-        }`}>
+        <div
+          className={`flex items-center justify-between rounded-2xl px-5 py-3 transition-all ${
+            scrolled ? "glass-strong shadow-card" : "glass"
+          }`}
+        >
           <a href="#home" className="flex items-center gap-2 font-display font-bold">
             <span className="text-gradient">Majeti Suhas</span>
           </a>

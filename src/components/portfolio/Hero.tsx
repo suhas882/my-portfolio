@@ -25,9 +25,12 @@ function useTyping(words: string[], typing = 70, pause = 1600) {
       setI((p) => p + 1);
       return;
     }
-    const t = setTimeout(() => {
-      setText(del ? current.slice(0, text.length - 1) : current.slice(0, text.length + 1));
-    }, del ? typing / 2 : typing);
+    const t = setTimeout(
+      () => {
+        setText(del ? current.slice(0, text.length - 1) : current.slice(0, text.length + 1));
+      },
+      del ? typing / 2 : typing,
+    );
     return () => clearTimeout(t);
   }, [text, del, i, words, typing, pause]);
 
@@ -38,7 +41,10 @@ export function Hero() {
   const typed = useTyping(ROLES);
 
   return (
-    <section id="home" className="relative flex min-h-screen items-center justify-center px-4 pt-32 pb-20">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center px-4 pt-32 pb-20"
+    >
       <div className="mx-auto max-w-5xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -75,8 +81,8 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg"
         >
-          CSE (AI & ML) student crafting intelligent systems, full-stack apps, and
-          AI-powered solutions that solve real-world problems.
+          CSE (AI & ML) student crafting intelligent systems, full-stack apps, and AI-powered
+          solutions that solve real-world problems.
         </motion.p>
 
         <motion.div
@@ -93,7 +99,7 @@ export function Hero() {
             <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
           </a>
           <a
-            href="/resume.pdf"
+            href="./resume.pdf"
             download
             className="glass inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-white/5"
           >
@@ -107,16 +113,26 @@ export function Hero() {
           transition={{ duration: 1, delay: 1 }}
           className="mt-10 flex items-center justify-center gap-4 text-muted-foreground"
         >
-          <a href="https://github.com/suhas882" target="_blank" rel="noreferrer"
-             className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-neon-blue">
+          <a
+            href="https://github.com/suhas882"
+            target="_blank"
+            rel="noreferrer"
+            className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-neon-blue"
+          >
             <Github className="h-4 w-4" />
           </a>
-          <a href="https://www.linkedin.com/in/majeti-suhas" target="_blank" rel="noreferrer"
-             className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-neon-purple">
+          <a
+            href="https://www.linkedin.com/in/majeti-suhas"
+            target="_blank"
+            rel="noreferrer"
+            className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-neon-purple"
+          >
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href="mailto:majetisuhas2021@gmail.com"
-             className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-neon-blue">
+          <a
+            href="mailto:majetisuhas2021@gmail.com"
+            className="glass grid h-11 w-11 place-items-center rounded-xl transition-colors hover:text-neon-blue"
+          >
             <Mail className="h-4 w-4" />
           </a>
         </motion.div>

@@ -6,10 +6,15 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Build as pure client-side SPA for Vercel static hosting
 export default defineConfig({
+  vite: {
+    base: "/my-portfolio/",
+  },
+  cloudflare: false,
   tanstackStart: {
-    // Disable server-side rendering for static deployment
-    ssr: false,
+    prerender: {
+      enabled: true,
+      routes: ["/"],
+    },
   },
 });

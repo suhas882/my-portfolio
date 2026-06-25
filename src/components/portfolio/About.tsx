@@ -27,9 +27,10 @@ export function About() {
         >
           <p className="text-lg leading-relaxed text-muted-foreground">
             I'm <span className="text-foreground font-medium">Majeti Suhas</span>, a Computer
-            Science Engineering student specializing in <span className="text-neon-blue">Artificial Intelligence</span> and{" "}
-            <span className="text-neon-purple">Machine Learning</span>. I love building intelligent systems,
-            full-stack applications, and AI-powered solutions.
+            Science Engineering student specializing in{" "}
+            <span className="text-neon-blue">Artificial Intelligence</span> and{" "}
+            <span className="text-neon-purple">Machine Learning</span>. I love building intelligent
+            systems, full-stack applications, and AI-powered solutions.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             My interests span machine learning, deep learning, modern web development, and using
@@ -69,7 +70,9 @@ export function About() {
             <div className="relative">
               <span className="absolute -left-[22px] top-1.5 h-3 w-3 rounded-full bg-gradient-primary shadow-glow" />
               <div className="font-medium">B.Tech — CSE (AI & ML)</div>
-              <div className="text-sm text-muted-foreground">SRM Institute of Science and Technology</div>
+              <div className="text-sm text-muted-foreground">
+                SRM Institute of Science and Technology
+              </div>
               <div className="mt-1 font-mono text-xs text-neon-blue">2023 – 2027 · CGPA 7.91</div>
             </div>
           </div>
@@ -88,7 +91,9 @@ export function About() {
             <div className="glass col-span-2 rounded-xl p-3">
               <HeartHandshake className="mb-2 h-4 w-4 text-neon-blue" />
               <div className="text-xs text-muted-foreground">Volunteering</div>
-              <div className="text-sm font-medium">Adarsa High School, Inkollu — Community Connect</div>
+              <div className="text-sm font-medium">
+                Adarsa High School, Inkollu — Community Connect
+              </div>
             </div>
           </div>
         </motion.div>
