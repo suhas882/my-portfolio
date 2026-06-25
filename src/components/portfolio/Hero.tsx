@@ -99,8 +99,8 @@ export function Hero() {
             <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
           </a>
           <a
-            href="./resume.pdf"
-            download
+            href="./Majeti_Suhas_Resume.pdf"
+            download="Majeti_Suhas_Resume.pdf"
             className="glass inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-white/5"
           >
             <Download className="h-4 w-4" /> Download Resume
